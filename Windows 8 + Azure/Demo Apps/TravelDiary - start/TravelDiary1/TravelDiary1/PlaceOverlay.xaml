@@ -1,0 +1,19 @@
+﻿<UserControl x:Name="OverlayControl"
+    x:Class="TravelDiary1.PlaceOverlay"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TravelDiary1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="224" Width="280">
+    
+    <Grid Margin="-130,0,0,0">
+    	<Rectangle Fill="#FFD1D1D1" HorizontalAlignment="Left" Height="226" Stroke="Black" VerticalAlignment="Top" Width="280" Margin="0,-2,0,0" Tapped="Overlay_Tapped"/>
+    	<Image HorizontalAlignment="Left" Height="54" Margin="14,17,0,0" VerticalAlignment="Top" Width="54" Source="Assets/Logo2.png" Tapped="Overlay_Tapped"/>
+    	<TextBlock x:Name="TitleTextBlock" HorizontalAlignment="Left" Margin="-56,22,0,0" TextWrapping="Wrap" Text="Title" VerticalAlignment="Top" FontSize="32" Width="326" TextAlignment="Right" Foreground="#FF099E09" Tapped="Overlay_Tapped"/>
+    	<TextBlock x:Name="DescriptionTextBlock" HorizontalAlignment="Left" Margin="14,82,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Foreground="Black" Height="131" Width="256" FontSize="13.333" Tapped="Overlay_Tapped" />
+    	<Image x:Name="CloseImage" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="38" Source="Assets/overlay.close.png" Margin="250,-10,0,0" Tapped="Close_Tapped"/>
+    	<Path Data="M10,64 L391.895,64" Fill="#FF099E09" HorizontalAlignment="Left" Height="1" Margin="14,62,0,0" Stretch="Fill" Stroke="#FF099E09" UseLayoutRounding="False" VerticalAlignment="Top" Width="258.895" Tapped="Overlay_Tapped"/>
+
+    </Grid>
+</UserControl>
